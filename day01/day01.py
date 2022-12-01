@@ -8,6 +8,7 @@ with open('input.txt') as file:
         else:
             elfs.append(currentMax)
             currentMax = 0
+    elfs.append(currentMax)
 
 elfs.sort(reverse=True)
 print(elfs[0])
